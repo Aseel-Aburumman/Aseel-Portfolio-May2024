@@ -32,7 +32,7 @@ body {
 
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 100vh; /*على طول الشاشة*/
   color: #102A71;
   display: flex;
   align-items: center;
@@ -50,35 +50,32 @@ body {
 
 .flex-container-banner > .text-container {
   flex: 1;
-  font-size: 70px; /* Reduced font-size for smaller screens */
-  padding: 20px; /* Add padding to the text container */
-  text-align: left; /* Centered text */
+  font-size: 70px; 
+  padding: 20px; 
+  text-align: left; 
   padding-left: 10vh;
 
 }
 
-.myname{
-  font-size: 70px;
-}
+.myname{  font-size: 70px;}
 
 .flex-container-banner > .image-container {
   flex: 1;
-  text-align: right; /* Align image container to the right */
-
+  text-align: right; 
   padding-right: 7vh;
 }
 
 .title2{
   font-size: 2.5rem;
-            color: #fdd63b;
-            font-style: oblique;
-            font-weight: bold;
+  color: #fdd63b;
+  font-style: oblique;
+  font-weight: bold;
 }
 
 .banner-pic {
   max-width: 100%;
   width: 100%;
-  margin: 0; /* Remove auto margins for right alignment */
+  margin: 0; /* Remove auto margins  */
   display: inline-block; /* Ensure image is inline within its container */
 }
 
@@ -94,21 +91,20 @@ mark {
 }
 
 .typewriter h1 {
-  color: #fff;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid var(--second-bg-color); /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .15em; /* Adjust as needed */
-  width: 13ch; /* Set the width to the number of characters in the text */
+  letter-spacing: .15em; 
+  width: 13ch; /* the width = the number of characters in the text */
   animation: 
-    typing 2.5s steps(13, end), /* Steps should match the number of characters */
+    typing 2.5s steps(13, end), /* Steps =the number of characters */
     blink-caret .5s step-end infinite;
 }
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 13ch; } /* Set the width to the number of characters in the text */
+  to { width: 13ch; } /*  the width = the number of characters in the text */
 }
 
 @keyframes blink-caret {
@@ -148,23 +144,23 @@ a {
   }
 
   .navbar-brand .logo {
-    width: 30px; /* Smaller logo for smaller screens */
+    width: 30px; /* smaller logo*/
   }
 
   .banner {
-    height: auto; /* Adjust height to content */
-    padding: 1rem; /* Adjust padding */
+    height: auto; 
+    padding: 1rem; 
   }
 
   .flex-container-banner {
-    flex-direction: column-reverse; /* Stack items vertically */
+    flex-direction: column-reverse; /* pic b4 text */
     padding: 1rem;
   }
 
   .flex-container-banner > .text-container {
-    font-size: 2.5rem; /* Smaller font-size */
+    font-size: 2.5rem; 
     padding: 1rem;
-    text-align: center; /* Center text */
+    text-align: center; 
   }
 
   .myname{
@@ -173,7 +169,7 @@ a {
   
   .flex-container-banner > .image-container {
     padding: 1rem;
-    text-align: center; /* Center image */
+    text-align: center; 
   }
 
   .title2{
@@ -186,21 +182,21 @@ a {
   }
 
   .banner-p {
-    font-size: 1rem; /* Smaller font-size */
+    font-size: 1rem; 
   }
 
   mark {
-    font-size: 1.2rem; /* Smaller font-size */
+    font-size: 1.2rem; 
   }
 
   .typewriter h1 {
-    text-align: center; /* Center the text for iPad */
-    margin: 0 auto; /* Center the element for iPad */
+    text-align: center;
+    margin: 0 auto; 
   }
 
   button {
-    font-size: 1rem; /* Smaller font-size */
-    padding: 0.5rem 1rem; /* Adjust padding */
+    font-size: 1rem; 
+    padding: 0.5rem 1rem; 
   }
 }
 
@@ -210,7 +206,7 @@ a {
   }
 
   .navbar-brand .logo {
-    width: 25px; /* Smaller logo for smaller screens */
+    width: 25px; /* Smaller logo  */
   }
 
   .banner {
@@ -219,13 +215,13 @@ a {
   }
 
   .flex-container-banner {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; /*vertically */
     align-items: center; /* Center items */
     padding: 1rem;
   }
 
   .flex-container-banner > .text-container {
-    font-size: 1.2rem; /* Smaller font-size */
+    font-size: 1.2rem; 
     padding: 0.5rem;
     text-align: center; /* Center text */
   }
@@ -245,21 +241,21 @@ a {
     font-size: 1.7rem;}
 
   .banner-pic {
-    max-width: 60%; /* Adjust width for iPhone */
+    max-width: 60%; 
     margin: 1rem auto; /* Center image */
   }
 
   .banner-p {
-    font-size: 0.8rem; /* Smaller font-size */
+    font-size: 0.8rem; 
   }
 
   mark {
-    font-size: 1rem; /* Smaller font-size */
+    font-size: 1rem; 
   }
 
   button {
-    font-size: 0.8rem; /* Smaller font-size */
-    padding: 0.5rem 1rem; /* Adjust padding */
+    font-size: 0.8rem; 
+    padding: 0.5rem 1rem; 
   }
 }
 /************************************************************************************************************************/
@@ -402,27 +398,27 @@ a {
   }
 
   .heading {
-    font-size: 3rem; /* Adjust heading size for smaller screens */
+    font-size: 3rem; 
   }
 
   .grid-item-info {
-    text-align: center; /* Center text for better readability */
+    text-align: center; 
   }
 }
 
 @media (max-width: 480px) { /* iPhone */
   .grid-container-info {
     grid-template-columns: 1fr; /* Stack sections vertically */
-    padding: 10px; /* Reduce padding */
+    padding: 10px; 
   }
 
   .heading {
-    font-size: 2rem; /* Adjust heading size for smaller screens */
+    font-size: 2rem;
   }
 
   .grid-item-info {
-    padding: 10px; /* Reduce padding */
-    text-align: center; /* Center text for better readability */
+    padding: 10px; 
+    text-align: center; 
   }
 
   .timeline-items::before {
@@ -430,26 +426,26 @@ a {
   }
 
   .timeline-item {
-    margin-bottom: 20px; /* Reduce margin for tighter spacing */
+    margin-bottom: 20px;
   }
 
   .timeline-item:nth-child(odd), .timeline-item:nth-child(even) {
-    padding: 0 20px; /* Reduce padding for timeline items */
+    padding: 0 20px; 
   }
 
   .timeline-content {
-    padding: 10px; /* Reduce padding inside the timeline content */
+    padding: 10px; 
   }
 
   .timeline-item:nth-child(even) .timeline-date {
     text-align: left;
   }
   .timeline-content h3 {
-    font-size: 18px; /* Adjust font-size */
+    font-size: 18px; 
   }
 
   .timeline-content p {
-    font-size: 14px; /* Adjust font-size */
+    font-size: 14px; 
   }
 }
 /***************************************************************************************************************************/
@@ -474,13 +470,13 @@ a {
 }
 
 .zoom:hover {
-  transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.03); 
 }
 
-.illustration-pic {
+.my-pic {
   width: 350px;
-  max-width: 100%; /* Ensure the image does not overflow */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; 
+  height: auto; /* aspect ratio */
   display: block;
   margin: 0 auto; /* Center the image */
   border-top-left-radius: 255px 15px;
@@ -525,7 +521,7 @@ a {
   background: rgb(247, 223, 128);
   border-radius: 2px;
   border: 1px solid #102A71;
-  box-shadow: 0px 5px 20px  #888888;
+  box-shadow: 0px 5px 20px  #4e4e4e;
 }
 
 .container-bar {
@@ -552,7 +548,7 @@ a {
 .skill-bar li {
   margin-bottom: 70px;
   background: #f1d668;
-  height: 6px;
+  height: 6px; /*the back bar  .aka the full one*/
   border-radius: 3px;
   border-left: 1px solid #111;
   border-top: 1px solid #111;
@@ -562,7 +558,6 @@ a {
 
 .skill-bar li em {
   position: relative;
-  font-style: normal;
   font-size: 25px;
   text-align: center;
   color: var(--text-color);
@@ -570,7 +565,7 @@ a {
 }
 
 .blueline {
-  height: 3px;
+  height: 3px;/*the frone bar  .aka the progress one*/
   margin: 1px 0;
   background: #102A71;
   position: absolute;
@@ -579,7 +574,7 @@ a {
 
 .titulo {
   opacity: 1;
-  animation: titulo 5s ease-out;
+  animation: titulo 20s ease-out;
 }
 
 /*programacion*/
@@ -593,15 +588,15 @@ a {
 }
 .Figma {
   width: 70%;
-  animation: php 2s ease-out;
+  animation: Figma 2s ease-out;
 }
 .Git {
   width: 50%;
-  animation: javascript 2s ease-out;
+  animation: Git 2s ease-out;
 }
 .javascript {
   width: 30%;
-  animation: jquery 2s ease-out;
+  animation: javascript 2s ease-out;
 }
 
 @keyframes titulo {
@@ -630,7 +625,7 @@ a {
     width: 95%;
   }
 }
-@keyframes php {
+@keyframes Figma {
   0% {
     width: 0px;
   }
@@ -638,7 +633,7 @@ a {
     width: 70%;
   }
 }
-@keyframes javascript {
+@keyframes Git {
   0% {
     width: 0px;
   }
@@ -646,7 +641,7 @@ a {
     width: 50%;
   }
 }
-@keyframes jquery {
+@keyframes javascript {
   0% {
     width: 0px;
   }
@@ -683,15 +678,15 @@ a {
 
 @media (max-width: 480px) {
   .h2-bar {
-    font-size: 1.8em; /* Adjust font size */
+    font-size: 1.8em; 
     padding: 10px 0 15px 0;
   }
   .col {
-    width: 100%; /* Ensure full width for columns */
+    width: 100%; 
   }
   .flex-container-skills {
     flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
+    align-items: center;
   }
   .flex-container-skills > .heading,
   .flex-container-skills > .bars {
@@ -700,7 +695,7 @@ a {
     padding: 10px;
   }
 
-  .illustration-pic {
+  .my-pic {
     margin: 10px;
     width: 290px;
   }
@@ -714,12 +709,12 @@ a {
   }
 
   .skill-bar li {
-    margin-bottom: 40px; /* Reduce margin between bars */
+    margin-bottom: 40px; 
 
   }
   .skill-bar li em {
-    font-size: 25px; /* Adjust font size for skill labels */
-    top: -30px; /* Adjust position */
+    font-size: 25px;
+    top: -30px; 
   }
 }
 /***************************************************************************************************************************/
@@ -835,26 +830,30 @@ animation: slide 20s ease infinite;
   background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/59d38f124201637.60ff4bd937bf6.jpg') no-repeat center center;
   background-size: cover;
 }
-/* Define each of the slides and add the background images*/
 
 .slide2:nth-child(1) {
-  background: url('/pic/example1.png') no-repeat center center;
+  background: url('https://onedrive.live.com/embed?resid=41DD7CEA3EB9140%21115&authkey=%21AO00pGqClFT2qf0&width=1284&height=683') no-repeat center center;
   background-size: cover;
 }
  
 .slide2:nth-child(2) {
-  background: url('/pic/example2.png') no-repeat center center;
+  background: url('https://onedrive.live.com/embed?resid=41DD7CEA3EB9140%21113&authkey=%21AA07xoYzjw-KUro&width=955&height=655') no-repeat center center;
   background-size: cover;
 }
 .slide2:nth-child(3) {
-  background: url('/pic/example3.png') no-repeat center center;
+  background: url('https://onedrive.live.com/embed?resid=41DD7CEA3EB9140%21114&authkey=%21AHX5NlJDbqbhVwM&width=1084&height=524') no-repeat center center;
   background-size: cover;
 }
 
 .slide2:nth-child(4) {
-  background: url('/pic/example4.png') no-repeat center center;
+  background: url('https://onedrive.live.com/embed?resid=41DD7CEA3EB9140%21116&authkey=%21APAR2nF38NHwp10&width=840&height=426') no-repeat center center;
   background-size: cover;
 }
+
+/*
+| Slide 1 | Slide 2 | Slide 3 | Slide 4 |
+|<----870px---->|<----870px---->|<----870px---->|
+*/
 
 @keyframes slide {
   0%, 25% {
@@ -1050,15 +1049,14 @@ form button:hover {
   height: 54px;
 }
 
-.zoom-logo {
-  padding: 300px;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
+.social-icons a img {
+  transition: transform 0.2s ease-in-out;
 }
 
-.zoom-logo:hover {
-  transform: scale(1.7); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.social-icons a img:hover {
+  transform: scale(1.2); /* Zoom to 120% of the original size */
 }
+
 
 @media screen and (max-width: 900px){
   
